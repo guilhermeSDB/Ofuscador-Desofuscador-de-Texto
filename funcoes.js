@@ -13,7 +13,15 @@ function ofusca(){
 }
 
 function desofuscar(){
-    document.getElementById("textarea-ofuscado").value = inputText
+    inputText = document.getElementById("textarea-original").value
+    const response = inputText
+    .replaceAll(/innis/gi,"i")
+    .replaceAll(/ais/gi,"a")
+    .replaceAll(/enter/gi,"e")
+    .replaceAll(/omber/gi,"o")
+    .replaceAll(/ufter/gi,"u")
+
+    document.getElementById("textarea-ofuscado").value = response
 }
 
 function copyClipboard(){
