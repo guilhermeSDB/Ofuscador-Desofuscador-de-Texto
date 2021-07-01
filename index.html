@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Import CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Import JS-->
+    <script src="funcoes.js"></script>
+
+    <title>Atividade 1 </title>
+</head>
+<body>
+    
+    <div class="container">
+        <h3>Ofuscador de Texto</h3>
+        <div class="div1">
+            <textarea name="texto-original" id="textarea-original" placeholder="Digite um texto para ofuscar"></textarea>
+
+            <footer>
+                <p>Texto original</p>
+                <div>
+                    <button id="ofuscar" onclick="ofusca()" >Ofuscar</button>
+                    <button id="desofuscar" onclick="desofuscar()">Desofuscar</button>
+                </div>
+            </footer>
+
+        </div>
+        <div class="div2">
+            <textarea name="texto-ofuscado" id="textarea-ofuscado" placeholder="Texto Ofuscado" readonly></textarea>
+            <footer>
+                <p>Texto ofuscado</p>
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>
