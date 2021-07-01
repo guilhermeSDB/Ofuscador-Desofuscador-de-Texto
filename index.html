@@ -11,6 +11,8 @@
     <!-- Import JS-->
     <script src="funcoes.js"></script>
 
+    <script src="https://kit.fontawesome.com/ec078606de.js" crossorigin="anonymous"></script>
+
     <title>Atividade 1 </title>
 </head>
 <body>
@@ -23,7 +25,7 @@
             <footer>
                 <p>Texto original</p>
                 <div>
-                    <button id="ofuscar" onclick="ofusca()" >Ofuscar</button>
+                    <button id="ofuscar" onclick="ofusca()">Ofuscar</button>
                     <button id="desofuscar" onclick="desofuscar()">Desofuscar</button>
                 </div>
             </footer>
@@ -33,6 +35,12 @@
             <textarea name="texto-ofuscado" id="textarea-ofuscado" placeholder="Texto Ofuscado" readonly></textarea>
             <footer>
                 <p>Texto ofuscado</p>
+                <div class="tooltip">
+                    <button onclick="copyClipboard()" onmouseout="outFunc()">
+                        <i class="far fa-copy"></i></button>
+                        <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                    </button>
+                </div>
             </footer>
         </div>
     </div>
