@@ -31,10 +31,10 @@ function copyClipboard(){
     document.execCommand("copy");
 
     var tooltip = document.getElementById("myTooltip");
-    tooltip.innerHTML = "Copied: " + copyText.value;
+    tooltip.innerHTML = "Copiado: " + copyText.value;
 }
 
 function outFunc() {
     var tooltip = document.getElementById("myTooltip");
-    tooltip.innerHTML = "Copy to clipboard";
+    tooltip.innerHTML = "Copiar";
   }
