@@ -2,11 +2,11 @@ var inputText
 
 function ofusca(){
     inputText = document.getElementById("textarea-original").value    
-    const response = inputText.replaceAll(/i/gi,"innis")
-    .replaceAll(/a/gi,"ais")
+    const response = inputText.replaceAll(/i/gi,"innis")    
     .replaceAll(/e/gi,"enter")
     .replaceAll(/o/gi,"omber")
     .replaceAll(/u/gi,"ufter")
+    .replaceAll(/a/gi,"ais")
 
     document.getElementById("textarea-ofuscado").value = response
     
@@ -15,11 +15,11 @@ function ofusca(){
 function desofuscar(){
     inputText = document.getElementById("textarea-original").value
     const response = inputText
-    .replaceAll(/innis/gi,"i")
-    .replaceAll(/ais/gi,"a")
+    .replaceAll(/innis/gi,"i")    
     .replaceAll(/enter/gi,"e")
     .replaceAll(/omber/gi,"o")
     .replaceAll(/ufter/gi,"u")
+    .replaceAll(/ais/gi,"a")
 
     document.getElementById("textarea-ofuscado").value = response
 }
